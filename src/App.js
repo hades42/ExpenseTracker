@@ -1,5 +1,7 @@
 import './App.css';
+import NewExpense from "./component/NewExpense/NewExpense";
 import ListExpense from "./component/Expenses/ListExpense";
+
 function App() {
 const expenses = [
   {
@@ -24,7 +26,7 @@ const expenses = [
 ];
   return (
     <div className="App">
-      <p> This is a paragraph</p>
+      <NewExpense></NewExpense>
       <ListExpense expenses={expenses}></ListExpense>
     </div>
   );
